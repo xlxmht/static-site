@@ -1,10 +1,215 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+    <style type="text/css">
+      .nav-pills-custom .nav-link {
+        color: #aaa;
+        background: #fff;
+        position: relative;
+      }
+
+      .nav-pills-custom .nav-link.active {
+        color: #000;
+        background: #fff;
+      }
+
+      @media (min-width: 992px) {
+        .nav-pills-custom .nav-link::before {
+          content: '';
+          display: block;
+          border-top: 8px solid transparent;
+          border-left: 10px solid #ddd;
+          border-bottom: 8px solid transparent;
+          position: absolute;
+          top: 50%;
+          right: -10px;
+          transform: translateY(-50%);
+          opacity: 0;
+        }
+      }
+
+      .nav-pills-custom .nav-link.active::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tab start -->
+    <!-- Demo header-->
+    <section class="py-5 header">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- Tabs nav -->
+            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <i class="fa fa-lightbulb-o mr-2"></i>
+                <span class="font-weight-bold small text-uppercase">Electrician</span>
+              </a>
+              <a class="nav-link mb-3 p-3 shadow" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <i class="fa fa-male mr-2"></i>
+                <span class="font-weight-bold small text-uppercase">Plumber</span>
+              </a>
+              <a class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                <i class="fa fa-star mr-2"></i>
+                <span class="font-weight-bold small text-uppercase">Carpenter</span>
+              </a>
+              <a class="nav-link mb-3 p-3 shadow" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                <i class="fa fa-check mr-2"></i>
+                <span class="font-weight-bold small text-uppercase">Cleaner</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <!-- Tabs content -->
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade shadow rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h4 class="font-italic mb-3">How It works</h4>
+                <h6 class="mb-2">1. Diagnosis</h6>
+                <ul>
+                  <li>Our partner visit your home & diagnosis the issues</li>
+                </ul>
+                <h6 class="mb-2">2. Cost Estimation</h6>
+                <ul>
+                  <li>The final statement will be provided after diagnosis process </li>
+                </ul>
+                <h6 class="mb-2">3. Spare Part Procurement</h6>
+                <ul>
+                  <li>Partner will be responsbile for procuring & obtaining the required spare parts at an additional cost</li>
+                </ul>
+                <h6 class="mb-2">4. Standardised repair Process</h6>
+                <ul>
+                  <li>Our partner will handle the entrie task & perform necessary action</li>
+                </ul>
+                <h6 class="mb-2">5. Post service cleanup</h6>
+                <ul>
+                  <li>Our partner will thoroughly clean the surround area & surfaces</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Included </h4>
+                <ul>
+                  <li>Labour charges for installation of one heavy switchboard</li>
+                  <li>Procurement of share parts (at extra cost)</li>
+                  <li>Clean up after the service</li>
+                  <li>Warranty & Damage cover</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Excluded </h4>
+                <ul>
+                  <li>Wiring at extra cost</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h4 class="font-italic mb-3">How It works</h4>
+                <h6 class="mb-2">1. Diagnosis</h6>
+                <ul>
+                  <li>Our partner visit your home & diagnosis the issues</li>
+                </ul>
+                <h6 class="mb-2">2. Cost Estimation</h6>
+                <ul>
+                  <li>The final statement will be provided after diagnosis process </li>
+                </ul>
+                <h6 class="mb-2">3. Spare Part Procurement</h6>
+                <ul>
+                  <li>Partner will be responsbile for procuring & obtaining the required spare parts at an additional cost</li>
+                </ul>
+                <h6 class="mb-2">4. Standardised repair Process</h6>
+                <ul>
+                  <li>Our partner will handle the entrie task & perform necessary action</li>
+                </ul>
+                <h6 class="mb-2">5. Post service cleanup</h6>
+                <ul>
+                  <li>Our partner will thoroughly clean the surround area & surfaces</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Included </h4>
+                <ul>
+                  <li>Small fittings installation (towel hangers, holders, towel shelves, and soap dispensers)</li>
+                  <li>Single knob/ inlet tap repair (kitchen sink, wash basin, bathroom)</li>
+                  <li>Procurement of share parts (at extra cost)</li>
+                  <li>Clean up after the service</li>
+                  <li>Warranty & Damage cover</li>
+                  <li>Warranty on spare parts provided or sourced by company</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Excluded </h4>
+                <ul>
+                  <li>Major masonry work like tiling, cementing, granite installation etc.</li>
+                  <li>Warranty on spare parts provided by customers</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <h4 class="font-italic mb-3">How It works</h4>
+                <h6 class="mb-2">1. Diagnosis</h6>
+                <ul>
+                  <li>Our partner visit your home & diagnosis the issues</li>
+                </ul>
+                <h6 class="mb-2">2. Cost Estimation</h6>
+                <ul>
+                  <li>The final statement will be provided after diagnosis process </li>
+                </ul>
+                <h6 class="mb-2">3. Spare Part Procurement</h6>
+                <ul>
+                  <li>Partner will be responsbile for procuring & obtaining the required spare parts at an additional cost</li>
+                </ul>
+                <h6 class="mb-2">4. Standardised repair Process</h6>
+                <ul>
+                  <li>Our partner will handle the entrie task & perform necessary action</li>
+                </ul>
+                <h6 class="mb-2">5. Post service cleanup</h6>
+                <ul>
+                  <li>Our partner will thoroughly clean the surround area & surfaces</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Included </h4>
+                <ul>
+                  <li>Applicable for wall clock, painting, photo frame, etc.</li>
+                  <li>Repair of one wooden door (alignment fixing, sanding & scraping, door jam fixing)</li>
+                  <li>Installation of fastener (at extra cost)</li>
+                  <li>Procurement of spare parts (at extra cost)</li>
+                  <li>Clean up after the service</li>
+                  <li>Company warranty & damage cover*</li>
+                </ul>
+                <h4 class="font-italic mt-3 mb-3">Excluded </h4>
+                <ul>
+                  <li>Installation of items exceeding 4 ft of area (2*2 ft).</li>
+                  <li>Repair of metal/ glass/ PVC/ sliding doors</li>
+                  <li>Door lock repair, hinge replacement, door dismantling</li>
+                  <li>Replacement of door accessories</li>
+                </ul>
+              </div>
+              <div class="tab-pane fade shadow rounded bg-white p-5" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <h4 class="font-italic mb-4">What this service includes</h4>
+                <h6 class="mb-2">1. Floor Deep Cleaning</h6>
+                <ul>
+                  <li>Floor deep cleaning using industrial grade machines to give it a new look</li>
+                </ul>
+                <h6 class="mb-2">2. Bathroom Deep Cleaning</h6>
+                <ul>
+                  <li>Deep cleaning of entire bathroom including stain removal from floor and tiles, cleaning of WC and wash basin, removal of water and scaling marks from taps and fixtures to enhance shine. </li>
+                </ul>
+                <h6 class="mb-2">3. Kitchen Deep Cleaning</h6>
+                <ul>
+                  <li>Deep cleaning of entire kitchen to remove oil & grease from gas stove, exhaust fan and sink. Thorough internal cleaning of trolleys and shelves. Cleaning of dirt, dust and hard stains from floor, tiles and slab.</li>
+                </ul>
+                <h6 class="mb-2">4. Living Room & Bedroom Cleaning</h6>
+                <ul>
+                  <li>Dry vacuuming of sofa, cushions, carpet and curtains to free them of dirt. Dusting & wiping of furniture and decor items.</li>
+                </ul>
+                <h6 class="mb-2">5. Hard To Reach Areas</h6>
+                <ul>
+                  <li>Our professionals remove all cobwebs, clean the doors and windows and fans to make it completely dust free and thoroughly clean the balcony. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tab end -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
